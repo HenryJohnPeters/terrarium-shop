@@ -1,12 +1,17 @@
+/* globals.css */
+
+/* Import Tailwind CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Custom CSS Variables */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
+/* Media query for dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -14,6 +19,7 @@
   }
 }
 
+/* Body styling */
 body {
   color: var(--foreground);
   background: var(--background);
