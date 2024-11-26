@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image"; // Import Image component from Next.js
 
 const ImageSlider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,10 +30,13 @@ const ImageSlider = ({ images }) => {
         >
           {images.map((image, index) => (
             <div key={index} className="flex-shrink-0 w-full">
-              <img
+              <Image
                 src={image}
                 alt={`Terrarium ${index + 1}`}
+                width={1200} // Set the desired width
+                height={600} // Set the desired height
                 className="w-full h-[40vh] object-cover rounded-xl"
+                layout="responsive" // Ensures the image maintains its aspect ratio
               />
             </div>
           ))}

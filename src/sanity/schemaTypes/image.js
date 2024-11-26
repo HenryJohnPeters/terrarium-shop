@@ -1,5 +1,5 @@
 // ./schemas/image.js
-export default {
+const image = {
   name: "image",
   title: "Image",
   type: "document",
@@ -19,3 +19,5 @@ export default {
     },
   ],
 };
+
+export default image;

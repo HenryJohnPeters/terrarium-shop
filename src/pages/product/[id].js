@@ -1,32 +1,6 @@
 import { useRouter } from "next/router";
-
-const products = [
-  {
-    id: 1,
-    name: "Terrarium Kit 1",
-    description: "A beautiful terrarium kit to get you started.",
-    price: "49.99",
-    image: "/assets/terrarium-1.jpg",
-    details: "Includes a variety of plants, stones, and decorative elements.",
-  },
-  {
-    id: 2,
-    name: "Terrarium Kit 2",
-    description: "A premium kit for plant enthusiasts.",
-    price: "69.99",
-    image: "/assets/terrarium-2.jpg",
-    details: "Includes premium plants, decorative glass, and tools.",
-  },
-  {
-    id: 3,
-    name: "Terrarium Kit 3",
-    description: "Create your perfect terrarium with this kit.",
-    price: "59.99",
-    image: "/assets/terrarium-3.jpg",
-    details:
-      "This kit is perfect for beginners and includes everything you need.",
-  },
-];
+import Image from "next/image"; // Import Next.js Image component
+import products from "../../../public/constants/products";
 
 export default function Product() {
   const router = useRouter();
@@ -42,10 +16,13 @@ export default function Product() {
     <div className="container mx-auto px-4 py-12">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <div>
-          <img
+          <Image
             src={product.image}
             alt={product.name}
+            width={600} // Specify width for optimization
+            height={600} // Specify height for optimization
             className="w-full h-96 object-cover rounded-lg shadow-md"
+            priority // Optionally use 'priority' for faster loading
           />
         </div>
         <div>

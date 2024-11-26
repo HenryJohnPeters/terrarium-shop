@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Image from "next/image"; // Importing the next/image component
 
 // ImageSlider component
 const ImageSlider = ({ images }) => {
@@ -32,10 +33,12 @@ const ImageSlider = ({ images }) => {
         >
           {images.map((image, index) => (
             <div key={index} className="flex-shrink-0 w-full h-screen">
-              <img
+              <Image
                 src={image}
                 alt={`Terrarium ${index + 1}`}
-                className="w-full h-full object-cover"
+                layout="fill"
+                objectFit="cover"
+                className="w-full h-full"
               />
             </div>
           ))}
@@ -113,7 +116,7 @@ const Title = () => {
           <p className="text-2xl text-gray-200 mb-12 leading-relaxed opacity-90">
             Explore, create, and design your perfect terrarium. Immerse yourself
             in nature with our stunning, customizable terrariums, bringing the
-            beauty of the outdoors into your space.
+            beauty of the outdoors into your .
           </p>
 
           {/* Call to Action Buttons */}

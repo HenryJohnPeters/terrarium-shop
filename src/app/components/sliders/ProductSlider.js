@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image"; // Import the Next.js Image component
 
 const ProductSlider = ({ products }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,11 +22,6 @@ const ProductSlider = ({ products }) => {
     }
   };
 
-  // Handle navigation dots click
-  const goToImage = (index) => {
-    setCurrentIndex(index);
-  };
-
   return (
     <div className="relative bg-green-800 w-full m-2 p-2">
       {/* Product Slider */}
@@ -39,9 +35,12 @@ const ProductSlider = ({ products }) => {
           {products.map((product, index) => (
             <div key={index} className="flex-shrink-0 w-full sm:w-1/3 px-4">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden group hover:scale-105 transition-all duration-300">
-                <img
+                {/* Use Image component instead of <img> */}
+                <Image
                   src={product.image}
                   alt={product.name}
+                  width={500} // Define width and height
+                  height={300}
                   className="w-full h-48 object-cover rounded-t-lg group-hover:opacity-80 transition-opacity duration-300"
                 />
                 <div className="p-4">
@@ -83,7 +82,7 @@ const ProductSlider = ({ products }) => {
         <span className="text-2xl">&gt;</span>
       </button>
 
-      {/* Navigation Dots */}
+      {/* Navigation Dots - Uncomment if needed */}
       {/* <div className="flex justify-center mt-4 space-x-2">
         {products.map((_, index) => (
           <button
