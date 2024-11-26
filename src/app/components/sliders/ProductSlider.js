@@ -81,19 +81,6 @@ const ProductSlider = ({ products }) => {
       >
         <span className="text-2xl">&gt;</span>
       </button>
-
-      {/* Navigation Dots - Uncomment if needed */}
-      {/* <div className="flex justify-center mt-4 space-x-2">
-        {products.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => goToImage(index)}
-            className={`h-3 w-3 rounded-full ${
-              index === currentIndex ? "bg-green-600" : "bg-gray-300"
-            } transition-all duration-300`}
-          />
-        ))}
-      </div> */}
     </div>
   );
 };
