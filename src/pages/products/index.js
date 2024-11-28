@@ -31,7 +31,7 @@ export default function Products() {
                 <span className="text-lg font-bold text-green-600">
                   ${product.price}
                 </span>
-                <Link href={`/products/${product.id}`}>
+                <Link href={`/product/${product.id}`}>
                   <button className="bg-green-600 text-white px-6 py-2 rounded-lg shadow-md hover:bg-green-700 transition-all duration-300 transform hover:scale-105">
                     View Product
                   </button>
