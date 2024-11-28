@@ -57,8 +57,7 @@ const AboutUs = () => {
           <p className="text-lg text-gray-700 mx-auto max-w-2xl mb-6">
             We are always looking for talented and passionate individuals to
             join our team. If you love plants, creativity, and working with an
-            amazing team, we&apos;d love to hear from you. Let&apos;s work
-            together to bring the beauty of nature into homes across the world.
+            amazing team, we would love to hear from you.
           </p>
           <button className="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition-all duration-300 transform hover:scale-105">
             Contact Us

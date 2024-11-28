@@ -13,7 +13,7 @@ const AboutUs = () => {
         <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed">
           We are passionate about bringing you the most beautiful, customizable
           terrariums. Our mission is to provide a unique and creative experience
-          for all plant lovers. Whether you&apos;re looking for a new hobby or a
+          for all plant lovers. Whether you are looking for a new hobby or a
           statement piece for your space, our terrariums will bring nature into
           your home.
         </p>
