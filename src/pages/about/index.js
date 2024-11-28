@@ -13,11 +13,11 @@ const AboutUs = () => {
           </h2>
           <p className="text-lg text-gray-700 mx-auto max-w-3xl">
             At That Green Lady, we are passionate about bringing nature into
-            people&apos;s lives through our beautiful and customizable
-            terrariums. We believe in creating unique, personalized pieces that
-            bring joy, calm, and a touch of greenery into any space. Our mission
-            is to make it easy for anyone to design their perfect terrarium and
-            experience the beauty of nature in the comfort of their home.
+            peoples lives through our beautiful and customizable terrariums. We
+            believe in creating unique, personalized pieces that bring joy,
+            calm, and a touch of greenery into any space. Our mission is to make
+            it easy for anyone to design their perfect terrarium and experience
+            the beauty of nature in the comfort of their home.
           </p>
         </div>
 
